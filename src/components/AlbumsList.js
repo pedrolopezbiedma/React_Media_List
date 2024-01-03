@@ -1,7 +1,8 @@
 import { useFetchAlbumsQuery, usePostAlbumMutation } from "../store";
-import ExpandablePanel from "./ExpandablePanel";
+
 import Skeleton from "./Skeleton";
 import Button from "./Button";
+import AlbumsListItem from "./AlbumsListItem";
 
 function AlbumsList({ user }) {
   const { data, error, isFetching } = useFetchAlbumsQuery(user);
@@ -23,14 +24,9 @@ function AlbumsList({ user }) {
               + Add Album
             </Button>
           </div>
-          {data.map((album) => {
-            const header = <div>{album.title}</div>;
-            return (
-              <ExpandablePanel header={header} key={album.id}>
-                List of photos in the album
-              </ExpandablePanel>
-            );
-          })}
+          {data.map((album) => (
+            <AlbumsListItem album={album} key={album.id} />
+          ))}
         </div>
       )}
     </div>
