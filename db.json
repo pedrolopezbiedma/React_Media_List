@@ -25,5 +25,11 @@
       "id": 9
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 8,
+      "title": "Random Photo",
+      "id": 123
+    }
+  ]
 }

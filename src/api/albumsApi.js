@@ -8,7 +8,7 @@ const albumsApi = createApi({
   }),
   endpoints: (builder) => {
     return {
-      // Endpoint to get the user's albums
+      // Endpoint to fetch the user's albums
       fetchAlbums: builder.query({
         providesTags: (result, error, arg) => [{ type: "Album", id: arg.id }],
         query: (user) => {
