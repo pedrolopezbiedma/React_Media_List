@@ -13,6 +13,12 @@
       "id": 4
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "name": "Harold Strosin",
+      "id": 4,
+      "userId": 1
+    }
+  ],
   "photos": []
 }
