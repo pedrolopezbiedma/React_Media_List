@@ -6,7 +6,6 @@ import Button from "./Button";
 function AlbumsList({ user }) {
   const { data, error, isFetching } = useFetchAlbumsQuery(user);
   const [addAlbum, results] = usePostAlbumMutation();
-  console.log("data is -->", data);
 
   const handleAddAlbum = () => {
     addAlbum(user);
@@ -18,9 +17,11 @@ function AlbumsList({ user }) {
       {error && <div>Error loading the albums...</div>}
       {!isFetching && (
         <div>
-          <div>
-            <h3>Albums for {user.name}</h3>
-            <Button onClick={handleAddAlbum}>+ Add Album</Button>
+          <div className="m-2 flex flex-row items-center justify-between">
+            <h3 className="text-lg font-bold">Albums for {user.name}</h3>
+            <Button loading={results.isLoading} onClick={handleAddAlbum}>
+              + Add Album
+            </Button>
           </div>
           {data.map((album) => {
             const header = <div>{album.title}</div>;
