@@ -10,6 +10,7 @@ const photosApi = createApi({
     return {
       // Endpoint to fetch the albums photos
       fetchPhotos: builder.query({
+        providesTags: (result, error, arg) => [{ type: "Photo", id: arg.id }],
         query: (album) => {
           return {
             method: "GET",
@@ -22,6 +23,9 @@ const photosApi = createApi({
       }),
       // Endpoint to add a new photo to an album
       postPhoto: builder.mutation({
+        invalidatesTags: (result, error, arg) => [
+          { type: "Photo", id: result.albumId },
+        ],
         query: (album) => {
           return {
             method: "POST",
@@ -33,10 +37,26 @@ const photosApi = createApi({
           };
         },
       }),
+      // Endpoint to remove a photo from an album
+      removePhoto: builder.mutation({
+        invalidatesTags: (result, error, arg) => [
+          { type: "Photo", id: result.albumId },
+        ],
+        query: (album) => {
+          return {
+            method: "DELETE",
+            url: `photos/${album.id}`,
+          };
+        },
+      }),
     };
   },
 });
 
 // Exporting the endpoints.
-export const { useFetchPhotosQuery, usePostPhotoMutation } = photosApi;
+export const {
+  useFetchPhotosQuery,
+  usePostPhotoMutation,
+  useRemovePhotoMutation,
+} = photosApi;
 export { photosApi };

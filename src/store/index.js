@@ -32,4 +32,8 @@ export {
   usePostAlbumMutation,
   useRemoveAlbumMutation,
 } from "../api/albumsApi";
-export { useFetchPhotosQuery, usePostPhotoMutation } from "../api/photosApi";
+export {
+  useFetchPhotosQuery,
+  usePostPhotoMutation,
+  useRemovePhotoMutation,
+} from "../api/photosApi";

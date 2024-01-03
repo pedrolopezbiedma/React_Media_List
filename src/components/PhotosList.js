@@ -6,7 +6,6 @@ import PhotosListItem from "./PhotosListItem";
 const PhotosList = ({ album }) => {
   const { data, error, isFetching } = useFetchPhotosQuery(album);
   const [addPhoto, results] = usePostPhotoMutation();
-  console.log("Photos for the album are -->", data);
 
   const handleAddPhoto = () => {
     addPhoto(album);
