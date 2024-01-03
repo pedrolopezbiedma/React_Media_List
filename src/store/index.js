@@ -13,6 +13,7 @@ export const store = configureStore({
   },
 });
 
+// Setting up listeners
 setupListeners(store.dispatch);
 
 // Exporting thunks
