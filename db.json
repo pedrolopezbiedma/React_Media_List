@@ -30,6 +30,16 @@
       "albumId": 8,
       "title": "Random Photo",
       "id": 123
+    },
+    {
+      "albumId": 8,
+      "url": "https://loremflickr.com/150/150?lock=6239403038998528",
+      "id": 124
+    },
+    {
+      "albumId": 8,
+      "url": "https://picsum.photos/seed/Rx3YK/150/150",
+      "id": 125
     }
   ]
 }
