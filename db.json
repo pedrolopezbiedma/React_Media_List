@@ -15,9 +15,9 @@
   ],
   "albums": [
     {
+      "userId": 1,
       "title": "Random Album",
-      "id": 4,
-      "userId": 1
+      "id": 4
     },
     {
       "userId": 1,
@@ -28,6 +28,41 @@
       "userId": 1,
       "title": "Bespoke Concrete Soap",
       "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Incredible Frozen Hat",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Elegant Rubber Salad",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "title": "Oriental Wooden Mouse",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "title": "Licensed Frozen Shoes",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "title": "Elegant Metal Bacon",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Sleek Frozen Car",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Bespoke Concrete Sausages",
+      "id": 13
     }
   ],
   "photos": []

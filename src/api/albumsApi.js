@@ -10,6 +10,7 @@ const albumsApi = createApi({
     return {
       // Endpoint to get the user's albums
       fetchAlbums: builder.query({
+        providesTags: (result, error, arg) => [{ type: "Album", id: arg.id }],
         query: (user) => {
           return {
             method: "GET",
@@ -22,6 +23,9 @@ const albumsApi = createApi({
       }),
       // Endpoint to create an album to an user
       postAlbum: builder.mutation({
+        invalidatesTags: (result, error, arg) => [
+          { type: "Album", id: result.userId },
+        ],
         query: (user) => {
           return {
             method: "POST",
