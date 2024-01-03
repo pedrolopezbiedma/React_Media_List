@@ -18,6 +18,16 @@
       "title": "Random Album",
       "id": 4,
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Practical Bronze Bike",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Bespoke Concrete Soap",
+      "id": 6
     }
   ],
   "photos": []
