@@ -22,4 +22,8 @@ export * from "./thunks/addUser";
 export * from "./thunks/removeUser";
 
 // Exporting generated query & mutations
-export { useFetchAlbumsQuery, usePostAlbumMutation } from "../api/albumsApi";
+export {
+  useFetchAlbumsQuery,
+  usePostAlbumMutation,
+  useRemoveAlbumMutation,
+} from "../api/albumsApi";

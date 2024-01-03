@@ -16,88 +16,13 @@
   "albums": [
     {
       "userId": 1,
-      "title": "Random Album",
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "title": "Practical Bronze Bike",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "title": "Bespoke Concrete Soap",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "title": "Incredible Frozen Hat",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "title": "Elegant Rubber Salad",
+      "title": "Awesome Fresh Towels",
       "id": 8
     },
     {
-      "userId": 1,
-      "title": "Oriental Wooden Mouse",
+      "userId": 3,
+      "title": "Small Metal Gloves",
       "id": 9
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Frozen Shoes",
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "title": "Elegant Metal Bacon",
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "title": "Sleek Frozen Car",
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "title": "Bespoke Concrete Sausages",
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "title": "Intelligent Wooden Computer",
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "title": "Practical Cotton Pizza",
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "title": "Intelligent Steel Shirt",
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "title": "Rustic Soft Towels",
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "title": "Luxurious Metal Shirt",
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "title": "Small Rubber Sausages",
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "title": "Sleek Bronze Table",
-      "id": 20
     }
   ],
   "photos": []

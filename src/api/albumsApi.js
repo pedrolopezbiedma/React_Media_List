@@ -37,10 +37,26 @@ const albumsApi = createApi({
           };
         },
       }),
+      // Endpoint to remove an album from an user
+      removeAlbum: builder.mutation({
+        invalidatesTags: (result, error, arg) => [
+          { type: "Album", id: result.userId },
+        ],
+        query: (album) => {
+          return {
+            method: "DELETE",
+            url: `albums/${album.id}`,
+          };
+        },
+      }),
     };
   },
 });
 
 // Exporting the endpoints.
-export const { useFetchAlbumsQuery, usePostAlbumMutation } = albumsApi;
+export const {
+  useFetchAlbumsQuery,
+  usePostAlbumMutation,
+  useRemoveAlbumMutation,
+} = albumsApi;
 export { albumsApi };
